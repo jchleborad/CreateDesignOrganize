@@ -1,0 +1,28 @@
+﻿<h2>Planners & Agendas from planners.html view</h2>
+<p>
+    {{controller.message}}
+</p>
+
+<div class="container-fluid">
+    <div>
+        <div class="table">
+            <ul class="horizontal-list markertext" style="list-style:none">
+                <strong class="col-md-3">Daily</strong>
+                <strong class="col-md-3">Weekly</strong>
+                <strong class="col-md-3">Monthly</strong>
+                <strong class="col-md-3">Agenda</strong>
+            </ul>
+        </div>
+    </div>
+
+    <div class="table">
+        <ul class="horizontal-list" oncontextmenu="return disableRightClick();">
+            <img class="col-md-3" ng-src="../../images/page_Daily.png" width="20%" alt="Daily" Title="Day View">
+            <img class="col-md-3" ng-src="../../images/page_Weekly.png" width="20%" alt="Weekly" Title="Week View">
+            <img class="col-md-3" ng-src="../../images/page_Monthly.png" width="20%" alt="Monthly" Title="Month View">
+            <img class="col-md-3" ng-src="../../images/page_Agenda.png" width="20%" alt="Agendas" Title="Agenda View">
+        </ul>
+    </div>
+</div>
+
+

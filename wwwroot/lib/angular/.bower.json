@@ -1,0 +1,18 @@
+{
+  "name": "angular",
+  "version": "1.6.8-build.5508+sha.2e03aed",
+  "license": "MIT",
+  "main": "./angular.js",
+  "ignore": [],
+  "dependencies": {},
+  "homepage": "https://github.com/angular/bower-angular",
+  "_release": "1.6.8-build.5508+sha.2e03aed",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.6.8-build.5508+sha.2e03aed",
+    "commit": "f365d5bc80ca9b2684f804a415c2ae3ecd9b8eb9"
+  },
+  "_source": "https://github.com/angular/bower-angular.git",
+  "_target": "v1.6.8-build.5508+sha.2e03aed",
+  "_originalSource": "angular"
+}

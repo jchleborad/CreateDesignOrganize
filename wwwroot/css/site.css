@@ -1,0 +1,55 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.rocksalt {
+    font-family: 'Rock Salt', cursive;
+}
+.permanentmarker {
+    font-family: 'Permanent Marker', cursive;
+}
+.shadowsintolighttwo {
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+.table {
+    display: table; /* Allow the centering to work */
+    margin: 0 auto;
+}
+
+.ul#horizontal-list {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+.ul#horizontal-list li {
+        display: inline;
+    }

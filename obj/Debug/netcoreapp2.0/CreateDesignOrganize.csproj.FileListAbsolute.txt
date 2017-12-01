@@ -1,0 +1,12 @@
+C:\Users\jchle\OneDrive\Documents\WebDevelopment\Programming\dotNet Angular\CreateDesignOrganize\CreateDesignOrganize\bin\Debug\netcoreapp2.0\CreateDesignOrganize.deps.json
+C:\Users\jchle\OneDrive\Documents\WebDevelopment\Programming\dotNet Angular\CreateDesignOrganize\CreateDesignOrganize\bin\Debug\netcoreapp2.0\CreateDesignOrganize.runtimeconfig.json
+C:\Users\jchle\OneDrive\Documents\WebDevelopment\Programming\dotNet Angular\CreateDesignOrganize\CreateDesignOrganize\bin\Debug\netcoreapp2.0\CreateDesignOrganize.runtimeconfig.dev.json
+C:\Users\jchle\OneDrive\Documents\WebDevelopment\Programming\dotNet Angular\CreateDesignOrganize\CreateDesignOrganize\bin\Debug\netcoreapp2.0\CreateDesignOrganize.dll
+C:\Users\jchle\OneDrive\Documents\WebDevelopment\Programming\dotNet Angular\CreateDesignOrganize\CreateDesignOrganize\bin\Debug\netcoreapp2.0\CreateDesignOrganize.pdb
+C:\Users\jchle\OneDrive\Documents\WebDevelopment\Programming\dotNet Angular\CreateDesignOrganize\CreateDesignOrganize\obj\Debug\netcoreapp2.0\CreateDesignOrganize.csprojResolveAssemblyReference.cache
+C:\Users\jchle\OneDrive\Documents\WebDevelopment\Programming\dotNet Angular\CreateDesignOrganize\CreateDesignOrganize\obj\Debug\netcoreapp2.0\CreateDesignOrganize.csproj.CoreCompileInputs.cache
+C:\Users\jchle\OneDrive\Documents\WebDevelopment\Programming\dotNet Angular\CreateDesignOrganize\CreateDesignOrganize\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\jchle\OneDrive\Documents\WebDevelopment\Programming\dotNet Angular\CreateDesignOrganize\CreateDesignOrganize\obj\Debug\netcoreapp2.0\CreateDesignOrganize.AssemblyInfoInputs.cache
+C:\Users\jchle\OneDrive\Documents\WebDevelopment\Programming\dotNet Angular\CreateDesignOrganize\CreateDesignOrganize\obj\Debug\netcoreapp2.0\CreateDesignOrganize.AssemblyInfo.cs
+C:\Users\jchle\OneDrive\Documents\WebDevelopment\Programming\dotNet Angular\CreateDesignOrganize\CreateDesignOrganize\obj\Debug\netcoreapp2.0\CreateDesignOrganize.dll
+C:\Users\jchle\OneDrive\Documents\WebDevelopment\Programming\dotNet Angular\CreateDesignOrganize\CreateDesignOrganize\obj\Debug\netcoreapp2.0\CreateDesignOrganize.pdb

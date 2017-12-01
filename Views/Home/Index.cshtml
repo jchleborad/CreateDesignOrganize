@@ -1,0 +1,62 @@
+﻿<html ng-app="myApp" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Create, Design, Organize!</title>
+    <base href="/" />
+
+    @* Site Fonts *@
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
+
+    @* Page Styling *@
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav rocksalt">
+                    <li><a class="navbar navbar-link" href="home">Create, Design, Organize!</a></li>
+                    <li><a class="navbar navbar-link" href="about">About Us</a></li>
+                    <li><a class="navbar navbar-link" href="planners">Planners</a></li>
+                </ul>
+                
+                @await Html.PartialAsync("_LoginPartial")
+            </div>
+        </div>
+    </nav>
+
+    <ui-view></ui-view>
+
+    <div class="container body-content">
+        <hr />
+        <footer>
+            <p>&copy; 2017 - Create, Design, Organize!</p>
+        </footer>
+    </div>
+
+    <!-- Library Files -->
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- App Init -->
+    <script src="~/ngApp/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="~/ngApp/controllers/homeController.js"></script>
+    <script src="~/ngApp/controllers/aboutController.js"></script>
+    <script src="~/ngApp/controllers/plannerController.js"></script>
+
+
+</body>
+</html>
