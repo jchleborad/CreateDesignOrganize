@@ -22,10 +22,22 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
             controller: AboutController,
             controllerAs: 'controller'
         })
+        .state('contact', {
+            url: '/contact',
+            templateUrl: '/ngApp/views/contact.html',
+            controller: ContactController,
+            controllerAs: 'controller'
+        })
         .state('planners', {
             url: '/planners',
             templateUrl: '/ngApp/views/planners.html',
             controller: PlannerController,
+            controllerAs: 'controller'
+        })
+        .state('fitness', {
+            url: '/fitness',
+            templateUrl: '/ngApp/views/fitness.html',
+            controller: FitnessController,
             controllerAs: 'controller'
         })
         .state('notFound', {
@@ -41,3 +53,8 @@ function disableRightClick() {
     alert("SNAP!\n\nImages \u00A9Create, Design, Organize! unless purchased!");
     return false;
 }
+
+//Show warning message before leaving site
+//window.onbeforeunload = function () {
+//    return '';
+//}

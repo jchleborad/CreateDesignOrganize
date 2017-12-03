@@ -29,6 +29,7 @@
     }
 }
 
+/*Site Fonts*/
 .rocksalt {
     font-family: 'Rock Salt', cursive;
 }
@@ -37,6 +38,29 @@
 }
 .shadowsintolighttwo {
     font-family: 'Shadows Into Light Two', cursive;
+}
+
+.handlee {
+    font-family: 'Handlee', cursive;
+}
+
+/*Navbar Fonts*/
+.nav-rocksalt {
+    font-family: 'Rock Salt', cursive;
+}
+
+.nav-permanentmarker {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 15px;
+}
+
+.nav-shadowsintolighttwo {
+    font-family: 'Shadows Into Light Two', cursive;
+    /*font-size: 20px;*/
+}
+
+.nav-handlee {
+    font-family: 'Handlee', cursive;
 }
 
 .table {
