@@ -5,15 +5,16 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Create, Design, Organize!</title>
     <base href="/" />
-
+    
     <!-- Site Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee">
+    <!--Font Awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Bootstrap Core -->
+    <!-- Bootstrap Core CSS-->
     <link rel="stylesheet" href="~/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <!-- Material Design Bootstrap -->
@@ -23,50 +24,70 @@
 
 </head>
 <body>
+<a name="top"></a>
     <!-- Main Navigation -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light teal lighten-4">
 
             <!-- Navbar brand -->
-            <a class="navbar-brand nav-rocksalt" href="/">Create, Design, Organize!</a>
-
+            <a class="navbar-brand nav-rocksalt" href="/">
+                <img src="~/images/Logo_CDO-Only_BLK.png" height="20" class="d-inline-block align-top" alt="">
+                Create, Design, Organize!
+            </a>
+            <!-- ./Navbar brand -->
             <!-- Collapse button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <!-- ./Collapse button -->
             <!-- Collapsible content -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <!-- Navbar Links -->
-                <ul class="navbar-nav mr-auto">
-                    <!-- Dropdown -->
+                <!-- Dropdown -->
+                <ul class="navbar-nav nav-handlee">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle nav-permanentmarker" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">   Bullet Journal Pages</a>
-                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item nav-permanentmarker" href="/planners">Planners & Agendas</a>
-                            <a class="dropdown-item nav-permanentmarker" href="/fitness">Fitness</a>
-                            <a class="dropdown-item nav-permanentmarker" href="#">Another Section (Goals)</a>
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Journal Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/planners">Planners</a>
+                            <a class="dropdown-item" href="/fitness">Fitness</a>
+                            <a class="dropdown-item" href="/lifestyle">Lifestyle</a>
+                            <a class="dropdown-item" href="/templates">Blank Templates</a>
+                            
                         </div>
                     </li>
                 </ul>
                 <!--/.Dropdown -->
+                <!-- Dropdown -->
+                    <ul class="navbar-nav nav-handlee">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Info
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/about">About Us</a>
+                                <a class="dropdown-item" href="/contact">Contact Us</a>
+                            </div>
+                        </li>
+                        <!--/.Dropdown -->
+                        <!-- User Login-Registration -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/login') }}">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/register') }}">Register</a>
+                        </li>
+                        <!-- /.User Login-Registration -->
 
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link nav-permanentmarker" href="/about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-permanentmarker" href="/contact">Contact Us</a>
-                    </li>
-                </ul>
-                <!--/. Navbar Links -->
-
+                    </ul>
             </div>
+            <!-- ./Collapsible content -->
+
         </nav>
     </header>
-
+    <!-- ./Main Navigation -->
     <!-- Angular SPA Views -->
     <ui-view></ui-view>
 
@@ -89,6 +110,9 @@
                         <a class="icons-sm fb-ic ml-0"><i class="fa fa-facebook-square white-text mr-lg-4"> </i></a>
                         <!--Pinterest-->
                         <a class="icons-sm pin-ic"><i class="fa fa-pinterest white-text mr-lg-4"> </i></a>
+                        <!--Top of Page-->
+                        <a href="#top" class="handlee"><i class="fa fa-arrow-circle-o-up mr-lg-1"> </i>Top of Page</a>
+
                     </div>
                     <!--Grid column-->
 
@@ -126,16 +150,16 @@
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                     <p class="handlee"><i class="fa fa-home mr-3"></i><a href="/" class="dark-grey-text">Home</a></p>
                     <p class="handlee"><i class="fa fa-wikipedia-w mr-3"></i><a href="https://www.wikihow.com/Bullet-Journal" class="dark-grey-text">How To Bullet Journal</a></p>
-                    <p class="handlee"><i class="fa fa-user-o mr-3"></i><a href="#!" class="dark-grey-text">Your Account</a></p>
+                    <p class="handlee"><i class="fa fa-user-o mr-3"></i><a href="/login" class="dark-grey-text">Your Account</a></p>
                 </div>
                 <!--/.Third column-->
                 <!--Fourth column-->
                 <div class="col-md-4 col-lg-3 col-xl-3 dark-grey-text">
                     <h6 class="title font-bold permanentmarker"><strong>Site Info</strong></h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p class="handlee"><i class="fa fa-map-marker mr-3"></i> Peoria Arizona </p>
-                    <p class="handlee"><i class="fa fa-envelope mr-3"></i> info@createdesignorganize.com</p>
-                    <p class="handlee"><i class="fa fa-envelope mr-3"></i> ideas@createdesignorganize.com</p>
+                    <p class="handlee"><i class="fa fa-map-marker mr-3"></i><a href="https://goo.gl/maps/9sVSh2zaKK32" class="dark-grey-text"> Peoria Arizona </a></p>
+                    <p class="handlee"><i class="fa fa-envelope mr-3"></i><a href="mailto:info@createdesignorganize.com?Subject=I%20Have%20a%20Question" class="dark-grey-text"> Questions </a></p>
+                    <p class="handlee"><i class="fa fa-envelope mr-3"></i><a href="mailto:pagerequests@createdesignorganize.com?Subject=I&#39m%20Looking%20for%20a%20Custom%20Page" class="dark-grey-text"> Custom Page Request </a></p>
                 </div>
                 <!--/.Fourth column-->
 
@@ -144,8 +168,8 @@
         <!--/.Footer Links-->
         <!-- Copyright-->
         <div class="footer-copyright">
-            <div class="container-fluid">
-                © 2017 <strong>Create, Design, Organize!</strong></a>
+            <div class="container-fluid nav-handlee">
+               <a href="/">  © 2017 <strong>Create, Design, Organize!</strong></a>
             </div>
         </div>
         <!--/.Copyright -->
@@ -166,11 +190,17 @@
     <script src="~/ngApp/app.js"></script>
 
     <!-- Controllers -->
-    <script src="~/ngApp/controllers/homeController.js"></script>
     <script src="~/ngApp/controllers/aboutController.js"></script>
-    <script src="~/ngApp/controllers/plannerController.js"></script>
+    <script src="~/ngApp/controllers/adminController.js"></script>
     <script src="~/ngApp/controllers/contactController.js"></script>
     <script src="~/ngApp/controllers/fitnessController.js"></script>
+    <script src="~/ngApp/controllers/homeController.js"></script>
+    <script src="~/ngApp/controllers/lifestyleController.js"></script>
+    <script src="~/ngApp/controllers/loginController.js"></script>
+    <script src="~/ngApp/controllers/plannerController.js"></script>
+    <script src="~/ngApp/controllers/registerController.js"></script>
+    <script src="~/ngApp/controllers/templatesController.js"></script>
+
     <!--/. Scripts -->
 
 </body>

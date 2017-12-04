@@ -1,6 +1,7 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #F5F5F5;
 }
 
 /* Wrapping element */
@@ -44,9 +45,17 @@
     font-family: 'Handlee', cursive;
 }
 
+.btn-handlee {
+    font-family: 'Handlee', cursive;
+    font-size: smaller;
+    text-transform: capitalize;
+}
+
 /*Navbar Fonts*/
 .nav-rocksalt {
     font-family: 'Rock Salt', cursive;
+    font-size: small;
+    font-weight: bold;
 }
 
 .nav-permanentmarker {
@@ -61,6 +70,7 @@
 
 .nav-handlee {
     font-family: 'Handlee', cursive;
+    font-size: large;
 }
 
 .table {
@@ -77,3 +87,13 @@
 .ul#horizontal-list li {
         display: inline;
     }
+
+.pic-radius-left {
+    border-radius: 12px 0px 0px 12px;
+}
+.pic-radius-right {
+    border-radius: 0px 12px 12px 0px;
+}
+.pic-radius-all {
+    border-radius: 10px;
+}

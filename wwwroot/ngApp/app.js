@@ -40,6 +40,36 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
             controller: FitnessController,
             controllerAs: 'controller'
         })
+        .state('lifestyle', {
+            url: '/lifestyle',
+            templateUrl: '/ngApp/views/lifestyle.html',
+            controller: LifestyleController,
+            controllerAs: 'controller'
+        })
+        .state('templates', {
+            url: '/templates',
+            templateUrl: '/ngApp/views/templates.html',
+            controller: TemplatesController,
+            controllerAs: 'controller'
+        })
+        .state('register', {
+            url: '/register',
+            templateUrl: '/ngApp/views/register.html',
+            controller: RegisterController,
+            controllerAs: 'controller'
+        })
+        .state('login', {
+            url: '/login',
+            templateUrl: '/ngApp/views/login.html',
+            controller: LoginController,
+            controllerAs: 'controller'
+        })
+        .state('admin', {
+            url: '/admin',
+            templateUrl: '/ngApp/views/admin.html',
+            controller: AdminController,
+            controllerAs: 'controller'
+        })
         .state('notFound', {
             url: '/notFound',
             templateUrl: '/ngApp/views/notFound.html'
@@ -58,3 +88,11 @@ function disableRightClick() {
 //window.onbeforeunload = function () {
 //    return '';
 //}
+
+// SideNav Initialization (MDB Pro Component)
+//$(".button-collapse").sideNav();
+
+// Custom scrollbar init  (MDB Pro Component)
+//var el = document.querySelector('.custom-scrollbar');
+//Ps.initialize(el);
+
