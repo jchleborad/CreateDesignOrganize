@@ -70,6 +70,12 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
             controller: AdminController,
             controllerAs: 'controller'
         })
+        .state('pageDaily', {
+            url: '/pageDaily',
+            templateUrl: '/ngApp/views/pageDaily.html',
+            controller: DailyController,
+            controllerAs: 'controller'
+        })
         .state('notFound', {
             url: '/notFound',
             templateUrl: '/ngApp/views/notFound.html'
@@ -80,7 +86,7 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
 
 //Disable right-click for images on page/site
 function disableRightClick() {
-    alert("SNAP!\n\nImages \u00A9Create, Design, Organize! unless purchased!");
+    alert("SNAP!\n\nImages are \u00A9Create, Design, Organize! unless purchased.");
     return false;
 }
 
@@ -106,7 +112,7 @@ function valUsername() {
 
         // $("#above").addClass('hidden');
         $('#message').css('color', 'red');
-        $('#message').html('Please enter username');
+        $('#message').html('Please enter your username');
 
         $('input:text').focus(
             function () {
@@ -235,7 +241,7 @@ function passwordChecker() {
     if ($('#password').val().length >= 4) {
         if (newValPassPoilcy() === true) {
             $('#message').css('color', 'green');
-            $('#message').html('Although looks like a good password, try to make it more stronger');
+            $('#message').html('Although looks like a good password, try to make it stronger');
             if ($('#password').val().length >= 9) {
                 $('#message').html('');
                 $('#message1').html('');
@@ -251,7 +257,7 @@ function NumAndWordRep() {
     if (password.match(/(.)\1\1/)) {
         //	alert("Your Password cannot contain Character or Number repetition");
         $('#message7').css('color', 'red');
-        $('#message7').html('Your Password cannot contain Character or Number repetition.');
+        $('#message7').html('Your Password cannot contain character or number repetition.');
         return false;
     }
     return true;
@@ -336,7 +342,7 @@ function submitForm() {
 
     if (document.getElementById("username").value.trim() === "" && document.getElementById("username").value !== null) {
         $('#message1').css('color', 'red');
-        $('#message1').html('Please enter your username');
+        $('#message1').html('Please enter a username');
     }
     else if (document.getElementById("yourEmail").value.trim() === "" && document.getElementById("yourEmail").value !== null) {
         $('#message1').css('color', 'red');

@@ -31,7 +31,7 @@
 
             <!-- Navbar brand -->
             <a class="navbar-brand nav-rocksalt" href="/">
-                <img src="~/images/Logo_CDO-Only_BLK.png" height="20" class="d-inline-block align-top" alt="">
+                <img src="~/images/img-logo_CDO-Only_BLK.png" height="20" class="d-inline-block align-top" alt="">
                 Create, Design, Organize!
             </a>
             <!-- ./Navbar brand -->
@@ -62,7 +62,7 @@
                 <!--/.Dropdown -->
                 <!-- Dropdown -->
                     <ul class="navbar-nav nav-handlee">
-                        <li class="nav-item dropdown">
+                        @*<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Info
                             </a>
@@ -70,7 +70,7 @@
                                 <a class="dropdown-item" href="/about">About Us</a>
                                 <a class="dropdown-item" href="/contact">Contact Us</a>
                             </div>
-                        </li>
+                        </li>*@
                         <!--/.Dropdown -->
                         <!-- User Login-Registration -->
                         <li class="nav-item">
@@ -128,7 +128,7 @@
                 <!--First column-->
                 <div class="col-md-3 col-lg-4 col-xl-3 mb-r dark-grey-text">
                     <h6 class="title font-bold permanentmarker"><strong>Create, Design, Organize!</strong></h6>
-                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
                     <p class="handlee">
                         Your home for professionally designed pages you can insert or paste right into your existing personal
                         bullet journal.  We offer a wide variety of pre-defined templates as well as blank grid paper in a
@@ -139,7 +139,7 @@
                 <!--Second column-->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-r dark-grey-text">
                     <h6 class="title font-bold permanentmarker"><strong>Related Products</strong></h6>
-                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
                     <p class="handlee"><i class="fa fa-book mr-3"></i><a href="https://www.papyrusonline.com/gifts/journals-and-notebooks" class="dark-grey-text" title="PapyrusOnline">Journals</a></p>
                     <p class="handlee"><i class="fa fa-amazon mr-3"></i><a href="https://www.amazon.com/slp/bullet-journal/qgn9783wjkj87ux" class="dark-grey-text" title="AmazonSupplies">Journal Supplies</a></p>
                 </div>
@@ -147,8 +147,10 @@
                 <!--Third column-->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-r dark-grey-text">
                     <h6 class="title font-bold permanentmarker"><strong>Useful links</strong></h6>
-                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
                     <p class="handlee"><i class="fa fa-home mr-3"></i><a href="/" class="dark-grey-text">Home</a></p>
+                    <p class="handlee"><i class="fa fa-info mr-3"></i><a href="/about" class="dark-grey-text">About Us</a></p>
+                    <h6 class="title font-bold permanentmarker"><strong>External Links</strong></h6>
                     <p class="handlee"><i class="fa fa-wikipedia-w mr-3"></i><a href="https://www.wikihow.com/Bullet-Journal" class="dark-grey-text">How To Bullet Journal</a></p>
                     <p class="handlee"><i class="fa fa-user-o mr-3"></i><a href="/login" class="dark-grey-text">Your Account</a></p>
                 </div>
@@ -156,8 +158,10 @@
                 <!--Fourth column-->
                 <div class="col-md-4 col-lg-3 col-xl-3 dark-grey-text">
                     <h6 class="title font-bold permanentmarker"><strong>Site Info</strong></h6>
-                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 160px;">
+                    <h6 class="title font-bold permanentmarker"><strong>Location</strong></h6>
                     <p class="handlee"><i class="fa fa-map-marker mr-3"></i><a href="https://goo.gl/maps/9sVSh2zaKK32" class="dark-grey-text"> Peoria Arizona </a></p>
+                    <h6  class="title font-bold permanentmarker"><strong>Contact Us</strong></h6>
                     <p class="handlee"><i class="fa fa-envelope mr-3"></i><a href="mailto:info@createdesignorganize.com?Subject=I%20Have%20a%20Question" class="dark-grey-text"> Questions </a></p>
                     <p class="handlee"><i class="fa fa-envelope mr-3"></i><a href="mailto:pagerequests@createdesignorganize.com?Subject=I&#39m%20Looking%20for%20a%20Custom%20Page" class="dark-grey-text"> Custom Page Request </a></p>
                 </div>
@@ -176,7 +180,7 @@
 
     </footer>
 
-    <!-- Scripts -->
+<!-- Scripts -->
     <!-- Library Files -->
     <script src="~/lib/angular/angular.min.js"></script>
     <script src="~/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
@@ -189,7 +193,7 @@
     <!-- App Init -->
     <script src="~/ngApp/app.js"></script>
 
-    <!-- Controllers -->
+    <!-- Main Controllers -->
     <script src="~/ngApp/controllers/aboutController.js"></script>
     <script src="~/ngApp/controllers/adminController.js"></script>
     <script src="~/ngApp/controllers/contactController.js"></script>
@@ -201,7 +205,10 @@
     <script src="~/ngApp/controllers/registerController.js"></script>
     <script src="~/ngApp/controllers/templatesController.js"></script>
 
-    <!--/. Scripts -->
+    <!-- Page Image Controllers -->
+    <script src="~/ngApp/controllers/dailyController.js"></script>
+
+<!--/. Scripts -->
 
 </body>
 </html>
