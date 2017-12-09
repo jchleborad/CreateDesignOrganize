@@ -10,29 +10,27 @@ namespace CreateDesignOrganize.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public DbSet<Planner> Planners { get; set; } //tells the program create a table called planners based on the planner model
+        //tells the program to create a table called "names"  based on the <name>.cs model
+        public DbSet<Exercise> Exercises { get; set; }
+        public DbSet<Lifestyle> Lifestyles { get; set; }
+        public DbSet<Planner> Planners { get; set; }
+        public DbSet<Template> Templates { get; set; }
+        
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
         
-        protected override void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(builder);
+            base.OnModelCreating(modelBuilder);
             // Customize the ASP.NET Identity model and override the defaults if needed.
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
+            modelBuilder.Entity<Exercise>().ToTable("Exercise");
+            modelBuilder.Entity<Lifestyle>().ToTable("Lifestyle");
+            modelBuilder.Entity<Planner>().ToTable("Planner");
+            modelBuilder.Entity<Template>().ToTable("Template");
+
         }
     }
 }
-
-
-//create models
-//add models to applicationDbContext.cs
-//add-migration 'name'
-//update-database
-//??Seed data (last)??
-
-    //do a project build prior to migration to ensure project builds
-    //watch for something like "aspnet users already exist as a table - re-build database", so delete all files in Migration folder (NOT ApplicationDbContext
-    //in SQL Obj Exp right-click on name of DB and delete - check box "close existing connecttion" should be checked prior to delete
-    //then add-migration and update-database

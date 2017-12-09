@@ -34,10 +34,10 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
             controller: PlannerController,
             controllerAs: 'controller'
         })
-        .state('fitness', {
-            url: '/fitness',
-            templateUrl: '/ngApp/views/fitness.html',
-            controller: FitnessController,
+        .state('exercise', {
+            url: '/exercise',
+            templateUrl: '/ngApp/views/exercise.html',
+            controller: ExerciseController,
             controllerAs: 'controller'
         })
         .state('lifestyle', {

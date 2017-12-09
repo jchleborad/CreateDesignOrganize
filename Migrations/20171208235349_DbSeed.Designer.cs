@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
 using System;
 
-namespace CreateDesignOrganize.Data.Migrations
+namespace CreateDesignOrganize.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20171206042002_planner")]
-    partial class planner
+    [Migration("20171208235349_DbSeed")]
+    partial class DbSeed
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -76,10 +76,12 @@ namespace CreateDesignOrganize.Data.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("CreateDesignOrganize.Models.Planner", b =>
+            modelBuilder.Entity("CreateDesignOrganize.Models.Exercise", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Activity");
 
                     b.Property<string>("Size");
 
@@ -89,7 +91,73 @@ namespace CreateDesignOrganize.Data.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Planners");
+                    b.ToTable("Exercise");
+                });
+
+            modelBuilder.Entity("CreateDesignOrganize.Models.Lifestyle", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<bool>("IsBlank");
+
+                    b.Property<bool>("IsChart");
+
+                    b.Property<bool>("IsToDoList");
+
+                    b.Property<string>("Size");
+
+                    b.Property<string>("Title");
+
+                    b.Property<string>("Type");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Lifestyle");
+                });
+
+            modelBuilder.Entity("CreateDesignOrganize.Models.Planner", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Day");
+
+                    b.Property<string>("Month");
+
+                    b.Property<string>("Size");
+
+                    b.Property<string>("Title");
+
+                    b.Property<string>("Type");
+
+                    b.Property<string>("Week");
+
+                    b.Property<string>("Year");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Planner");
+                });
+
+            modelBuilder.Entity("CreateDesignOrganize.Models.Template", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Dots");
+
+                    b.Property<string>("Lines");
+
+                    b.Property<string>("Size");
+
+                    b.Property<string>("Title");
+
+                    b.Property<string>("Type");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("Template");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace CreateDesignOrganize.Models
 {
-    public class Planner : Page
+    public class Exercise : Page
     {
-        public string Period { get; set; }
+        public string Activity { get; set; }
     }
 }

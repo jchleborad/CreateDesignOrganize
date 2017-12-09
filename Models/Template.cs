@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace CreateDesignOrganize.Models
 {
-    public class Planner : Page
+    public class Template : Page
     {
-        public string Period { get; set; }
+        public bool IsDots { get; set; }
+        public bool IsLines { get; set; }
     }
 }
