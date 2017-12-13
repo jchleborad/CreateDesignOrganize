@@ -391,3 +391,30 @@ function checkEmail() {
 
 }
 //End Registration Page
+
+
+
+//Test Drop Down 1
+//function testDrop() {
+//    var x = document.getElementById("mySelect").value;
+//    document.getElementById("demo").innerHTML = x;
+//}
+
+
+//Test Drop Down 2
+//angular.module('',['ui.bootstrap']).controller('DropdownCtrl', function ($scope) {
+
+//}).directive("dropdownTextSet", function () {
+//    return {
+//        restrict: "A",
+//        link: function (scope, ele, attr) {
+//            var dropdown_item = angular.element(document.getElementById("angular_menu_item")).children();
+//            for (var i = 0; i < dropdown_item.length; i++) {
+//                dropdown_item.eq(i).bind("click", function ($event) {
+
+//                    ele.html($event.target.innerHTML + '<span class="caret">');
+//                });
+//            }
+//        }
+//    }
+//});

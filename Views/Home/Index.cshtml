@@ -30,7 +30,7 @@
         <nav class="navbar navbar-expand-lg navbar-light teal lighten-4">
 
             <!-- Navbar brand -->
-            <a class="navbar-brand nav-rocksalt" href="/">
+            <a class="navbar-brand nav-rocksalt" href="/" title="Home" oncontextmenu="return disableRightClick();">
                 <img src="~/images/img-logo_CDO-Only_BLK.png" height="20" class="d-inline-block align-top" alt="">
                 Create, Design, Organize!
             </a>
@@ -47,49 +47,42 @@
                 <!-- Dropdown -->
                 <ul class="navbar-nav nav-handlee">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" title="View Pages" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Journal Pages
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/planners">Planners</a>
-                            <a class="dropdown-item" href="/exercise">Exercise & Fitness</a>
-                            <a class="dropdown-item" href="/lifestyle">Lifestyle</a>
-                            <a class="dropdown-item" href="/templates">Blank Templates</a>
+                            <a class="dropdown-item" style="font-size:medium" href="/planners">Planners</a>
+                            <a class="dropdown-item" style="font-size:medium" href="/exercise">Exercise & Fitness</a>
+                            <a class="dropdown-item" style="font-size:medium" href="/lifestyle">Lifestyle</a>
+                            <a class="dropdown-item" style="font-size:medium" href="/templates">Blank Pages</a>
                             
                         </div>
                     </li>
                 </ul>
                 <!--/.Dropdown -->
-                <!-- Dropdown -->
-                    <ul class="navbar-nav nav-handlee">
-                        @*<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Info
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="/about">About Us</a>
-                                <a class="dropdown-item" href="/contact">Contact Us</a>
-                            </div>
-                        </li>*@
-                        <!--/.Dropdown -->
                         <!-- User Login-Registration -->
+                    <ul class="navbar-nav nav-handlee float-right">
                         <li class="nav-item">
-                            <a class="nav-link" href="/login">Login</a>
+                            <a class="nav-link" href="#" title="View Your Cart"><i class="fa fa-shopping-cart mr-lg-1"></i>Shopping Cart</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/register">Register</a>
+                            <a class="nav-link" href="/login" title="User Login"><i class="fa fa-user-circle-o mr-lg-1"></i>Login</a>
                         </li>
-                        <!-- /.User Login-Registration -->
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="/register" title="New User Registration"><i class="fa fa-user-circle-o mr-lg-1"></i>Register</a>
+                        </li>
                     </ul>
+                        <!-- /.User Login-Registration -->
             </div>
             <!-- ./Collapsible content -->
 
         </nav>
     </header>
     <!-- ./Main Navigation -->
+
     <!-- Angular SPA Views -->
     <ui-view></ui-view>
+    <!-- ./Angular SPA Views -->
 
     <!-- Footer -->
     <footer class="page-footer center-on-small-only teal lighten-4 pt-0">
@@ -104,15 +97,15 @@
                         <h6 class="mb-0 white-text text-center text-md-left handlee" style="font-size: large"><strong>Get connected with us on Facebook & Pintrest!</strong></h6>
                     </div>
                     <!--Grid column-->
+
                     <!--Grid column-->
                     <div class="col-12 col-md-7 text-center text-md-right">
                         <!--Facebook-->
-                        <a class="icons-sm fb-ic ml-0"><i class="fa fa-facebook-square white-text mr-lg-4"> </i></a>
+                        <a href="http://www.example.com" class="icons-sm fb-ic ml-0" title="Facebook" target="_blank"><i class="fa fa-facebook-square white-text mr-lg-4"></i></a>
                         <!--Pinterest-->
-                        <a class="icons-sm pin-ic"><i class="fa fa-pinterest white-text mr-lg-4"> </i></a>
+                        <a href="http://www.example.com" class="icons-sm pin-ic" title="Pinterest" target="_blank"><i class="fa fa-pinterest white-text mr-lg-4"></i></a>
                         <!--Top of Page-->
-                        <a href="#top" class="handlee"><i class="fa fa-arrow-circle-o-up mr-lg-1"> </i>Top of Page</a>
-
+                        <a href="#top" class="handlee" title="Go To Top"><i class="fa fa-arrow-circle-o-up mr-lg-1"></i>Top of Page</a>
                     </div>
                     <!--Grid column-->
 
@@ -127,43 +120,50 @@
 
                 <!--First column-->
                 <div class="col-md-3 col-lg-4 col-xl-3 mb-r dark-grey-text">
-                    <h6 class="title font-bold permanentmarker"><strong>Create, Design, Organize!</strong></h6>
+                    <h6 class="font-bold nav-rocksalt"><strong>Create, Design, Organize!</strong></h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
                     <p class="handlee">
                         Your home for professionally designed pages you can insert or paste right into your existing personal
                         bullet journal.  We offer a wide variety of pre-defined templates as well as blank grid paper in a
-                        variety of sized to fit your every need!
+                        variety of sizes to fit your every need!
                     </p>
                 </div>
                 <!--/.First column-->
+
                 <!--Second column-->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-r dark-grey-text">
                     <h6 class="title font-bold permanentmarker"><strong>Related Products</strong></h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
-                    <p class="handlee"><i class="fa fa-book mr-3"></i><a href="https://www.papyrusonline.com/gifts/journals-and-notebooks" class="dark-grey-text" title="PapyrusOnline">Journals</a></p>
-                    <p class="handlee"><i class="fa fa-amazon mr-3"></i><a href="https://www.amazon.com/slp/bullet-journal/qgn9783wjkj87ux" class="dark-grey-text" title="AmazonSupplies">Journal Supplies</a></p>
+                    <p class="handlee"><i class="fa fa-book mr-3"></i><a href="https://www.papyrusonline.com/gifts/journals-and-notebooks" class="dark-grey-text" title="Papyrus Online" target="_blank">Journals</a></p>
+                    <p class="handlee"><i class="fa fa-amazon mr-3"></i><a href="https://www.amazon.com/slp/bullet-journal/qgn9783wjkj87ux" class="dark-grey-text" title="Amazon Supplies" target="_blank">Journal Supplies</a></p>
+                    <p class="handlee"><i class="fa fa-amazon mr-3"></i><a href="https://www.amazon.com/s/ref=nb_sb_ss_c_1_15?url=search-alias%3Daps&field-keywords=scrapbooking+adhesive&sprefix=scrapbooking+ad%2Caps%2C194&crid=3HW7V840XM0HV" class="dark-grey-text" title="Page Adhesives" target="_blank">Adhesives</a></p>
+                    <p class="handlee"><i class="fa fa-amazon mr-3"></i><a href="https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=washi+tape" class="dark-grey-text" title="Fun Decorative Tapes" target="_blank">Washi-Tape</a></p>
                 </div>
                 <!--/.Second column-->
+
                 <!--Third column-->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-r dark-grey-text">
                     <h6 class="title font-bold permanentmarker"><strong>Useful links</strong></h6>
                     <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
-                    <p class="handlee"><i class="fa fa-home mr-3"></i><a href="/" class="dark-grey-text">Home</a></p>
-                    <p class="handlee"><i class="fa fa-info mr-3"></i><a href="/about" class="dark-grey-text">About Us</a></p>
+                    <p class="handlee"><i class="fa fa-home mr-3"></i><a href="/" class="dark-grey-text" title="Home">Home</a></p>
+                    <p class="handlee"><i class="fa fa-info mr-3"></i><a href="/about" class="dark-grey-text" title="About CDO">About Us</a></p>
+                    <p class="handlee"><i class="fa fa-user-circle-o mb-3 mr-3"></i><a href="/login" class="dark-grey-text" title="Login">Your Account</a></p>
                     <h6 class="title font-bold permanentmarker"><strong>External Links</strong></h6>
-                    <p class="handlee"><i class="fa fa-wikipedia-w mr-3"></i><a href="https://www.wikihow.com/Bullet-Journal" class="dark-grey-text">How To Bullet Journal</a></p>
-                    <p class="handlee"><i class="fa fa-user-o mr-3"></i><a href="/login" class="dark-grey-text">Your Account</a></p>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+                    <p class="handlee"><i class="glyphicon glyphicon-flash mr-3"></i><a href="https://www.bulletjournal.com/" class="dark-grey-text"  target="_blank" title="The Original">Orignal Bullet Journal</a></p>
+                    <p class="handlee"><i class="fa fa-wikipedia-w mr-3"></i><a href="https://www.wikihow.com/Bullet-Journal" class="dark-grey-text" target="_blank" title="How To">How To Bullet Journal</a></p>
                 </div>
                 <!--/.Third column-->
+
                 <!--Fourth column-->
                 <div class="col-md-4 col-lg-3 col-xl-3 dark-grey-text">
                     <h6 class="title font-bold permanentmarker"><strong>Site Info</strong></h6>
-                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 160px;">
-                    <h6 class="title font-bold permanentmarker"><strong>Location</strong></h6>
-                    <p class="handlee"><i class="fa fa-map-marker mr-3"></i><a href="https://goo.gl/maps/9sVSh2zaKK32" class="dark-grey-text"> Peoria Arizona </a></p>
+                    <hr class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto" style="width: 160px;">
+                    <p class="handlee"><i class="fa fa-map-marker mb-3 mr-3"></i><a href="https://goo.gl/maps/9sVSh2zaKK32" class="dark-grey-text" title="Google Map"> Peoria Arizona </a></p>
                     <h6  class="title font-bold permanentmarker"><strong>Contact Us</strong></h6>
-                    <p class="handlee"><i class="fa fa-envelope mr-3"></i><a href="mailto:info@createdesignorganize.com?Subject=I%20Have%20a%20Question" class="dark-grey-text"> Questions </a></p>
-                    <p class="handlee"><i class="fa fa-envelope mr-3"></i><a href="mailto:pagerequests@createdesignorganize.com?Subject=I&#39m%20Looking%20for%20a%20Custom%20Page" class="dark-grey-text"> Custom Page Request </a></p>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 160px;">
+                    <p class="handlee"><i class="fa fa-envelope mr-3"></i><a href="mailto:info@createdesignorganize.com?Subject=I%20Have%20a%20Question" class="dark-grey-text" title="Email Questions"> Questions </a></p>
+                    <p class="handlee"><i class="fa fa-envelope mr-3"></i><a href="mailto:pagerequests@createdesignorganize.com?Subject=I&#39m%20Looking%20for%20a%20Custom%20Page" class="dark-grey-text" title="Email Requests"> Custom Page Request </a></p>
                 </div>
                 <!--/.Fourth column-->
 
@@ -172,13 +172,14 @@
         <!--/.Footer Links-->
         <!-- Copyright-->
         <div class="footer-copyright">
-            <div class="container-fluid nav-handlee">
-               <a href="/">  © 2017 <strong>Create, Design, Organize!</strong></a>
+            <div class="container-fluid nav-rocksalt">
+               <a href="/" title="Home">  © 2017 <strong>Create, Design, Organize!</strong></a>
             </div>
         </div>
         <!--/.Copyright -->
 
     </footer>
+    <!--/.Footer-->
 
 <!-- Scripts -->
     <!-- Library Files -->
