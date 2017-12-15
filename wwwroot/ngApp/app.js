@@ -64,6 +64,14 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
             controller: LoginController,
             controllerAs: 'controller'
         })
+
+        //.state('login', {
+        //    url: '/login',
+        //    templateUrl: '~/Views/Account/Login.cshtml',
+        //    controller: AccountController,
+        //    controllerAs: 'controller'
+        //})
+
         .state('admin', {
             url: '/admin',
             templateUrl: '/ngApp/views/admin.html',

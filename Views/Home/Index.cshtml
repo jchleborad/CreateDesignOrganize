@@ -7,10 +7,13 @@
     <base href="/" />
     
     <!-- Site Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand|Handlee|Just+Another+Hand|Permanent+Marker|Rock+Salt|Shadows+Into+Light+Two">
+    @*<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Just+Another+Hand">*@
+
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -51,10 +54,10 @@
                             Journal Pages
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" style="font-size:medium" href="/planners">Planners</a>
-                            <a class="dropdown-item" style="font-size:medium" href="/exercise">Exercise & Fitness</a>
-                            <a class="dropdown-item" style="font-size:medium" href="/lifestyle">Lifestyle</a>
-                            <a class="dropdown-item" style="font-size:medium" href="/templates">Blank Pages</a>
+                            <a class="dropdown-item" style="font-size:medium" href="/planners"><i class="fa fa-calendar mr-2"></i>Planners</a>
+                            <a class="dropdown-item" style="font-size:medium" href="/exercise"><i class="fa fa-bicycle mr-2"></i>Exercise & Fitness</a>
+                            <a class="dropdown-item" style="font-size:medium" href="/lifestyle"><i class="fa fa-book mr-2"></i>Lifestyle</a>
+                            <a class="dropdown-item" style="font-size:medium" href="/templates"><i class="fa fa-calendar-o mr-2"></i>Blank Pages</a>
                             
                         </div>
                     </li>
@@ -68,8 +71,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/login" title="User Login"><i class="fa fa-user-circle-o mr-lg-1"></i>Login</a>
                         </li>
+                        @* ASP.Net EF Login View *@
+                        @*<li class="nav-item">
+                            <a class="nav-link" href="~/Views/Account/Login.cshtml" title="User Login"><i class="fa fa-user-circle-o mr-lg-1"></i>Login</a>
+                        </li>*@
+                        
                         <li class="nav-item">
-                            <a class="nav-link" href="/register" title="New User Registration"><i class="fa fa-user-circle-o mr-lg-1"></i>Register</a>
+                            <a class="nav-link" href="/register" title="New User Registration"><i class="fa fa-arrow-circle-o-right mr-lg-1"></i>Register</a>
                         </li>
                     </ul>
                         <!-- /.User Login-Registration -->
