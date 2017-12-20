@@ -7,6 +7,7 @@
     "jquery-validation": "1.14.0",
     "jquery-validation-unobtrusive": "3.2.6",
     "angular": "v1.6.8-build.5508+sha.2e03aed",
-    "angular-ui-router": "1.0.11"
+    "angular-ui-router": "1.0.11",
+    "ngCart": "ngcart#^1.0.0"
   }
 }

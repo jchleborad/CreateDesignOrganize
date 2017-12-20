@@ -5,7 +5,7 @@
 //import { plannercontroller } from './controllers/plannercontroller';
 //import { contactcontroller } from './controllers/contactController';
 
-angular.module('myApp', ["ui.router"]).config(routing);
+angular.module('myApp', ["ui.router", "ngCart"]).config(routing);
 
 routing.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
 function routing($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -52,12 +52,6 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
             controller: TemplatesController,
             controllerAs: 'controller'
         })
-        .state('register', {
-            url: '/register',
-            templateUrl: '/ngApp/views/register.html',
-            controller: RegisterController,
-            controllerAs: 'controller'
-        })
         .state('login', {
             url: '/login',
             templateUrl: '/ngApp/views/login.html',
@@ -65,13 +59,19 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
             controllerAs: 'controller'
         })
 
-        //.state('login', {
-        //    url: '/login',
+        //.state('Login', {
+        //    url: '/Login',
         //    templateUrl: '~/Views/Account/Login.cshtml',
         //    controller: AccountController,
         //    controllerAs: 'controller'
         //})
 
+        .state('register', {
+            url: '/register',
+            templateUrl: '/ngApp/views/register.html',
+            controller: RegisterController,
+            controllerAs: 'controller'
+        })
         .state('admin', {
             url: '/admin',
             templateUrl: '/ngApp/views/admin.html',
@@ -84,6 +84,12 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
             controller: DailyController,
             controllerAs: 'controller'
         })
+        .state('shoppingCart', {
+            url: '/shoppingCart',
+            templateUrl: '/ngApp/views/shoppingCart.html',
+            controller: ShoppingCartController,
+            controllerAs: 'controller'
+        })
         .state('notFound', {
             url: '/notFound',
             templateUrl: '/ngApp/views/notFound.html'
@@ -94,7 +100,7 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
 
 //Disable right-click for images on page/site
 function disableRightClick() {
-    alert("SNAP!\n\nImages are \u00A9Create, Design, Organize! unless purchased.");
+    alert("SNAP!\n\nImages are \© 2017 Create, Design, Organize! unless purchased.");
     return false;
 }
 
@@ -226,7 +232,6 @@ function prevPage() {
 function loginStatus() {
     alert("This is a demo login application");
     return false;
-
 }
 //End Login Page
 
@@ -257,8 +262,6 @@ function passwordChecker() {
             return true;
         }
     }
-
-
 }
 function NumAndWordRep() {
     var password = $('#password').val().toLowerCase();
@@ -273,8 +276,8 @@ function NumAndWordRep() {
 function userNameAsPass() {
     var password = $('#password').val().toLowerCase();
     var uname = $('#username').val().toLowerCase();
-
     var uname1 = new RegExp(uname);
+
     if (null !== uname && '' !== uname) {
         if (uname1.test(password)) {
 
@@ -291,7 +294,6 @@ function userNameAsPass() {
         return false;
     }
     return true;
-
 }
 function newValPassPoilcy() {
 
@@ -344,7 +346,6 @@ function newValPassPoilcy() {
 
         return true;
     }
-
 }
 function submitForm() {
 
@@ -386,7 +387,6 @@ function submitForm() {
         }
         return true;
     }
-
 }
 function checkEmail() {
     var email = $('#yourEmail').val();
@@ -396,33 +396,12 @@ function checkEmail() {
     else {
         return false;
     }
-
 }
 //End Registration Page
 
 
-
-//Test Drop Down 1
-//function testDrop() {
-//    var x = document.getElementById("mySelect").value;
-//    document.getElementById("demo").innerHTML = x;
-//}
-
-
-//Test Drop Down 2
-//angular.module('',['ui.bootstrap']).controller('DropdownCtrl', function ($scope) {
-
-//}).directive("dropdownTextSet", function () {
-//    return {
-//        restrict: "A",
-//        link: function (scope, ele, attr) {
-//            var dropdown_item = angular.element(document.getElementById("angular_menu_item")).children();
-//            for (var i = 0; i < dropdown_item.length; i++) {
-//                dropdown_item.eq(i).bind("click", function ($event) {
-
-//                    ele.html($event.target.innerHTML + '<span class="caret">');
-//                });
-//            }
-//        }
-//    }
-//});
+//Shopping Cart
+//angular.module('myApp').controller('myCtrl', ['$scope', '$http', 'ngCart', function ($scope, $http, ngCart) {
+//    ngCart.setTaxRate(7.5);
+//    ngCart.setShipping(2.99);
+//}]);

@@ -8,11 +8,6 @@
     
     <!-- Site Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand|Handlee|Just+Another+Hand|Permanent+Marker|Rock+Salt|Shadows+Into+Light+Two">
-    @*<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rock+Salt">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gochi+Hand">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Just+Another+Hand">*@
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,7 +22,7 @@
 
 </head>
 <body>
-<a name="top"></a>
+<a name="top" id="ref"></a>
     <!-- Main Navigation -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light teal lighten-4">
@@ -63,19 +58,17 @@
                     </li>
                 </ul>
                 <!--/.Dropdown -->
+
                         <!-- User Login-Registration -->
                     <ul class="navbar-nav nav-handlee float-right">
                         <li class="nav-item">
-                            <a class="nav-link" href="#" title="View Your Cart"><i class="fa fa-shopping-cart mr-lg-1"></i>Shopping Cart</a>
+                            <a class="nav-link" href="/shoppingCart" title="View Your Cart"><i class="fa fa-shopping-cart mr-lg-1"></i>Shopping Cart</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="/login" title="User Login"><i class="fa fa-user-circle-o mr-lg-1"></i>Login</a>
                         </li>
-                        @* ASP.Net EF Login View *@
-                        @*<li class="nav-item">
-                            <a class="nav-link" href="~/Views/Account/Login.cshtml" title="User Login"><i class="fa fa-user-circle-o mr-lg-1"></i>Login</a>
-                        </li>*@
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" href="/register" title="New User Registration"><i class="fa fa-arrow-circle-o-right mr-lg-1"></i>Register</a>
                         </li>
@@ -193,7 +186,8 @@
     <!-- Library Files -->
     <script src="~/lib/angular/angular.min.js"></script>
     <script src="~/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <!-- Material Design Bootstrap Files-->
+
+    <!-- Material Design Bootstrap -->
     <script src="~/js/jquery-3.2.1.min.js"></script>
     <script src="~/js/popper.min.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
@@ -201,6 +195,9 @@
 
     <!-- App Init -->
     <script src="~/ngApp/app.js"></script>
+
+    <!-- Shopping Cart -->
+    <script src="~/lib/ngCart/dist/ngCart.js"></script>
 
     <!-- Main Controllers -->
     <script src="~/ngApp/controllers/aboutController.js"></script>
@@ -213,6 +210,8 @@
     <script src="~/ngApp/controllers/plannerController.js"></script>
     <script src="~/ngApp/controllers/registerController.js"></script>
     <script src="~/ngApp/controllers/templatesController.js"></script>
+    <script src="~/ngApp/controllers/shoppingCartController.js"></script>
+
 
     <!-- Page Image Controllers -->
     <script src="~/ngApp/controllers/dailyController.js"></script>
