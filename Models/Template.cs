@@ -7,7 +7,6 @@ namespace CreateDesignOrganize.Models
 {
     public class Template : Page
     {
-        public bool IsDots { get; set; }
-        public bool IsLines { get; set; }
+        public string Category { get; set; }
     }
 }

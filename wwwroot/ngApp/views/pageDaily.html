@@ -27,24 +27,24 @@
 
 
                 <div class="btn-group">
-                <!--Dropdown list for page size-->
+                    <!--Dropdown list for page size-->
                     <select class="btn btn-sm dropdown-toggle btn-teal lighten-4 btn-handlee mr-3" style="font-size:medium" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                             ng-model="controller.selectedSize"
                             ng-options="f for f in controller.sizes"
                             ng-init="controller.selectedSize = controller.sizes[0]"></select>
-                <!--./Dropdown list for page size-->
-
-                <!--Dropdown list for page style-->
+                    <!--./Dropdown list for page size-->
+                    <!--Dropdown list for page style-->
                     <select class="btn btn-sm dropdown-toggle btn-teal lighten-4 btn-handlee" style="font-size:medium" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                             ng-model="controller.selectedStyle"
                             ng-options="f for f in controller.styles"
                             ng-init="controller.selectedStyle = controller.styles[0]"></select>
-                <!--./Dropdown list for page style-->
+                    <!--./Dropdown list for page style-->
                     <hr />
-                    <tt>model={{controller.selectedStyle}}</tt><br />
+                    <tt>model = {{controller.selectedSize}}</tt><br />
+                    <tt>model = {{controller.selectedStyle}}</tt><br />
 
                 </div>
-                <a href="#" class="btn btn-sm btn-teal lighten-4 btn-handlee" style="font-size:medium">Add to Cart</a>
+                <!--<a href="#" class="btn btn-sm btn-teal lighten-4 btn-handlee" style="font-size:medium">Add to Cart</a>-->
 
 
                 <div class="row float-right">
@@ -52,11 +52,9 @@
                 </div>
             </div>
             <!--./Grid Colummn-->
-
         </div>
         <!--./Grid Row-->
     </div>
-    <!-- Main Container -->
-
+    <!-- ./Main Container -->
 </main>
-<!-- Main Layout -->
+<!-- ./Main Layout -->

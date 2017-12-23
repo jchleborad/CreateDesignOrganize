@@ -1,4 +1,7 @@
 ﻿class PlannerController {
-    constructor() {
+    constructor(plannerService) {
+
+        this.planners = plannerService.getPlanners();
+
     }
 }

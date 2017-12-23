@@ -17,9 +17,10 @@ namespace CreateDesignOrganize.Data
 
             var exercises = new Exercise[]
             {
-                new Exercise { Size = "USLetter", Style = "Fancy", Type = "Workout", Activity = "Running"},
-                new Exercise { Size = "USLetter", Style = "Modern", Type = "Workout", Activity = "Running"},
-
+                new Exercise { Activity = "Workout"},
+                new Exercise { Activity = "Motility"},
+                new Exercise { Activity = "Diet"},
+                new Exercise { Activity = "Hydration"},
             };
 
             foreach (Exercise e in exercises)
@@ -30,9 +31,10 @@ namespace CreateDesignOrganize.Data
 
             var lifestyles = new Lifestyle[]
             {
-                new Lifestyle { Size = "USLetter", Style = "Fancy", Type = "ReadingList",},
-                new Lifestyle { Size = "USLetter", Style = "Modern", Type = "ReReadingListad"},
- 
+                new Lifestyle { List = "Reading"},
+                new Lifestyle { List = "Entertainment"},
+                new Lifestyle { List = "Travel"},
+                new Lifestyle { List = "Goals"},
             };
 
             foreach (Lifestyle l in lifestyles)
@@ -43,9 +45,10 @@ namespace CreateDesignOrganize.Data
 
             var planners = new Planner[]
             {
-                new Planner { Size = "USLetter", Style = "Fancy", Type = "SinglePage", Period = "Day"},
-                new Planner { Size = "USLetter", Style = "Modern", Type = "SinglePage", Period = "Day"},
-  
+                new Planner { Interval = "Day"},
+                new Planner { Interval = "Week"},
+                new Planner { Interval = "Month"},
+                new Planner { Interval = "Year"},
             };
 
             foreach (Planner p in planners)
@@ -56,8 +59,8 @@ namespace CreateDesignOrganize.Data
 
             var templates = new Template[]
             {
-                new Template { Size = "USLetter", Style = "Blank", Type = "Dots"},
-                new Template { Size = "USLetter", Style = "Blank", Type = "Lines"},
+                new Template { Category = "Dots"},
+                new Template { Category = "Lines"},
             };
 
             foreach (Template t in templates)

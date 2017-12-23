@@ -54,6 +54,21 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 }
 
 
+//Dropdown Buttons
+ // html:
+<select 
+  class="btn-primary btn"
+  ng-model="controller.selectedFruit" 
+  ng-options="f for f in controller.fruits" 
+  ng-init="controller.selectedFruit = controller.fruits[0]">
+</select>
+
+// controller.js
+constructor() {
+    this.selectedFruit = '';
+    this.fruits = ['Choose one', 'apples', 'oranges', 'kiwis'];
+  }
+
 
 
 

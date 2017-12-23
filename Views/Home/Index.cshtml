@@ -17,11 +17,13 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <!-- Material Design Bootstrap -->
     <link rel="stylesheet" href="~/css/mdb.min.css" />
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="~/lib/lightbox2/dist/css/lightbox.css" />
     <!-- Site CSS -->
     <link rel="stylesheet" href="~/css/site.css" />
-
 </head>
-<body>
+
+<body ng-cloak>
 <a name="top" id="ref"></a>
     <!-- Main Navigation -->
     <header>
@@ -193,6 +195,9 @@
     <script src="~/js/bootstrap.min.js"></script>
     <script src="~/js/mdb.min.js"></script>
 
+    <!-- Lightbox -->
+    <script src="~/lib/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+
     <!-- App Init -->
     <script src="~/ngApp/app.js"></script>
 
@@ -212,9 +217,8 @@
     <script src="~/ngApp/controllers/templatesController.js"></script>
     <script src="~/ngApp/controllers/shoppingCartController.js"></script>
 
-
-    <!-- Page Image Controllers -->
-    <script src="~/ngApp/controllers/dailyController.js"></script>
+    <!-- Page Controllers -->
+    <script src="~/ngApp/controllers/pageController.js"></script>
 
 <!--/. Scripts -->
 

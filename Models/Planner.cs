@@ -7,6 +7,6 @@ namespace CreateDesignOrganize.Models
 {
     public class Planner : Page
     {
-        public string Period { get; set; }
+        public string Interval { get; set; }
     }
 }

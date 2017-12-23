@@ -7,10 +7,7 @@ namespace CreateDesignOrganize.Models
 {
     public class Lifestyle : Page
     {
-        public bool IsBlank { get; set; }
-        public bool IsChart { get; set; }
-        public bool IsToDoList { get; set; }
-        public bool IsReadingList { get; set; }
+        public string List { get; set; }
 
     }
 }

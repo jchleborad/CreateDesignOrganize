@@ -82,12 +82,6 @@ namespace CreateDesignOrganize.Migrations
 
                     b.Property<string>("Activity");
 
-                    b.Property<string>("Size");
-
-                    b.Property<string>("Title");
-
-                    b.Property<string>("Type");
-
                     b.HasKey("ID");
 
                     b.ToTable("Exercise");
@@ -98,17 +92,7 @@ namespace CreateDesignOrganize.Migrations
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<bool>("IsBlank");
-
-                    b.Property<bool>("IsChart");
-
-                    b.Property<bool>("IsToDoList");
-
-                    b.Property<string>("Size");
-
-                    b.Property<string>("Title");
-
-                    b.Property<string>("Type");
+                    b.Property<string>("List");
 
                     b.HasKey("ID");
 
@@ -120,19 +104,7 @@ namespace CreateDesignOrganize.Migrations
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Day");
-
-                    b.Property<string>("Month");
-
-                    b.Property<string>("Size");
-
-                    b.Property<string>("Title");
-
-                    b.Property<string>("Type");
-
-                    b.Property<string>("Week");
-
-                    b.Property<string>("Year");
+                    b.Property<string>("Interval");
 
                     b.HasKey("ID");
 
@@ -144,15 +116,7 @@ namespace CreateDesignOrganize.Migrations
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Dots");
-
-                    b.Property<string>("Lines");
-
-                    b.Property<string>("Size");
-
-                    b.Property<string>("Title");
-
-                    b.Property<string>("Type");
+                    b.Property<string>("Category");
 
                     b.HasKey("ID");
 

@@ -199,18 +199,14 @@
 }
 
 /*Shopping Cart*/
-/*hr {
-    margin:20px 0;
-}*/
-
-/*h3 {
-    color:#1758AA
-}*/
-
 h3 span {font-size:14px; display:block;
 
 }
 
-/*span[ng-click] {
-    cursor: pointer;
-}*/
+/* Dividing Lines w/Gradient*/
+.hr-gradient {
+    height: 15px;
+    border-radius:5px;
+    background-color: slategray;
+    background: linear-gradient(to left top,purple,lightgray);
+}
